@@ -14,3 +14,17 @@ emp.data <- data.frame(
 	"2015-03-27"))
 	stringsAsFactors = FALSE	
 )
+
+# Create a matrix in R
+emp.data.matric <- as.matrix(emp.data)
+
+# Performing selection on datasets
+emp.data.matric[2]
+
+# Convert floats to numerics
+round(as.numeric(emp.data.matrix[,3], digits = 3))
+
+# How to perform sub-setting
+emp.data.matric[c(emp.data.matrix[,1] < 4),]
+# ,1 (chooses column 1)
+# 1, (chooses row 1)
