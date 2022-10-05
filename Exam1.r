@@ -6,7 +6,7 @@ y = c(1,2,3,4,5,6,7,8,9,10,11)
 
 
 # Generates data points in sequence from -4.5 to 4.5
-pts = seq(-4.5,4.5,length=100)
+pts = seq(-1000.5,1000.5,length=1000)
 
 # Plots x and y to visualize distribution curve
 plot(pts,dt(pts,df=9),col='red',type='1')
@@ -15,4 +15,6 @@ plot(pts,dt(pts,df=9),col='red',type='1')
 lines(density(x), col='green')
 lines(density(y), col='blue')
 
+# Calculate P value
 ttest = t.test(x,y)
+
